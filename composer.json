@@ -1,0 +1,36 @@
+{
+  "name": "upinside/fsphp",
+  "description": "Formação Full Stack PHP Developer",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "jonathan",
+      "email": "jonathanramiresnina@gmail.com",
+      "homepage": "https://www.jrsdesenvolvimento.com.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Support/Config.php",
+      "source/Support/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-pdo": ">=8.0",
+    "phpmailer/phpmailer": "6.*",
+    "league/plates": "3.*",
+    "coffeecode/uploader": "2.0.0",
+    "coffeecode/cropper": "2.0.0",
+    "coffeecode/optimizer": "2.*",
+    "coffeecode/paginator": "2.*",
+    "coffeecode/router": "2.*"
+  }
+}
